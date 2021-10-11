@@ -1,0 +1,14 @@
+.profile-container{
+    width: 100%;
+    height: 100hv;
+    background-color: #fff;
+    display: flex;
+}
+
+.profile-container > img {
+    height: 500px;
+}
+
+.profile-text-container {
+    display:flex;
+}
