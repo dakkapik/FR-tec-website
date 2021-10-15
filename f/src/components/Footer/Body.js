@@ -54,7 +54,7 @@ function Footer() {
                         <a href="https://www.instagram.com/pikbakkapik/">Instagram</a>
                         <Link>Youtube</Link>
                         <a href="https://www.twitch.tv/bloodsportpik">Twitch</a>
-                        <Link>How it works</Link>
+                        <a href="https://discord.gg/zMDHXGk">Discord</a>
                     </div>
                 </div>
             </div>

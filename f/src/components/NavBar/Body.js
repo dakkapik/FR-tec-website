@@ -30,7 +30,7 @@ function NavBar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
-                        <img src="./images/logo-fr-tec.png" id="fr-logo" alt="FR tec logo"/>
+                        <img src="./images/logo-fr-tec-w.png" id="fr-logo" alt="FR tec logo"/>
                     </Link>
                     <div className="menu-icon" onClick={handleClick} >
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>

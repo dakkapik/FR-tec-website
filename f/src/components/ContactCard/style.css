@@ -1,0 +1,10 @@
+.contact-card-container {
+    height: 80hv;
+    width: 100%;
+    display: flex;
+    background-color: cornflowerblue;
+}
+
+.contact-card-container > h1 {
+    height: 100%;
+}
