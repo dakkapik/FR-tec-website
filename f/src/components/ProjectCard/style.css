@@ -1,0 +1,15 @@
+.project-card-container{
+    background-color: rgba(79, 77, 255, 0.973);
+    margin-right: 2rem;
+}
+
+.project-card-title{
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.project-card-entry{
+    height: 400px;
+    padding: 1rem;
+}
