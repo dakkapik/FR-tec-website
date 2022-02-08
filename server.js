@@ -6,7 +6,7 @@ const app = express();
 
 app.use(favicon(__dirname + '/f/build/logo-fr-tec.png'));
 app.use(express.static(__dirname));
-app.use(express.static(path.join(__dirname, './f/build')));
+app.use(express.static(path.join(__dirname, '/f/build')));
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
