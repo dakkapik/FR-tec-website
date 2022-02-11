@@ -13,12 +13,16 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-  
     margin-bottom: 24px;
     padding: 24px;
     color: #fff;
   }
   
+  .input-form > div {
+    display: flex;
+    flex-direction: row;
+  }
+
   .footer-subscription > p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
@@ -36,6 +40,7 @@
   
   .footer-input {
     padding: 8px 20px;
+    padding-right: 40px;
     border-radius: 2px;
     margin-right: 10px;
     outline: none;
@@ -43,6 +48,23 @@
     font-size: 18px;
     margin-bottom: 16px;
     border: 1px solid #fff;
+  }
+
+  .footer-message-input {
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 2px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border: 1px solid #fff;
+  }
+
+  .input-form {
+    display: flex;
+    flex-direction: column;
   }
   
   .footer-links {
@@ -62,7 +84,7 @@
     align-items: flex-start;
     margin: 16px;
     text-align: left;
-    width: 160px;
+    width: 30vh;
     box-sizing: border-box;
   }
   
@@ -92,7 +114,11 @@
   .footer-input::placeholder {
     color: #b1b1b1;
   }
-  
+
+  .footer-message-input::placeholder {
+    color: #b1b1b1;
+  }
+
   /* Social Icons */
   .social-icon-link {
     color: #fff;
@@ -143,7 +169,10 @@
     }
   
     .footer-input {
-      width: 100%;
+      width: 90%;
+    }
+    .footer-message-input{
+      width: 90%;
     }
   
     .btn {

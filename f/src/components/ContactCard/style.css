@@ -1,10 +1,18 @@
 .contact-card-container {
-    height: 80hv;
+    height:60vh;
     width: 100%;
     display: flex;
-    background-color: cornflowerblue;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    flex-direction: column;
 }
 
 .contact-card-container > h1 {
-    height: 100%;
+    padding: 2vh;
 }
+
+.contact-card-container > h2 {
+    padding: 0.5vh;
+}
+
