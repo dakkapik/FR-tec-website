@@ -1,10 +1,10 @@
 import React from 'react'
-import ProjectDisplay from '../components/ProjectDisplay/Body'
+import ProjectDisplays from '../components/ProjectsDisplay/ProjectsDisplay'
 
 const Projects = () => {
     return (
         <>
-            <ProjectDisplay/>            
+            <ProjectDisplays/>            
         </>
     )
 }

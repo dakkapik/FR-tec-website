@@ -1,6 +1,7 @@
 .project-card-container{
+    width:90%;
     background-color: rgba(79, 77, 255, 0.973);
-    margin-right: 2rem;
+    margin-top: 2rem;
 }
 
 .project-card-title{
