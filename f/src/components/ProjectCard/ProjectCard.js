@@ -8,6 +8,7 @@ function ProjectCard ({props}) {
                 <h1>{props.title}</h1>
             </div>
             <div className="project-card-entry">
+                <img src={props.src} alt=''></img>
                 <p>
                     {props.entry}
                 </p>

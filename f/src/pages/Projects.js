@@ -1,10 +1,10 @@
 import React from 'react'
-import ProjectDisplays from '../components/ProjectsDisplay/ProjectsDisplay'
+import ProjectsDisplays from '../components/ProjectsDisplay/ProjectsDisplay'
 
 const Projects = () => {
     return (
         <>
-            <ProjectDisplays/>            
+            <ProjectsDisplays/>            
         </>
     )
 }

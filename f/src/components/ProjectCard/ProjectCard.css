@@ -1,5 +1,5 @@
 .project-card-container{
-    width:90%;
+    width:92%;
     background-color: rgba(79, 77, 255, 0.973);
     margin-top: 2rem;
 }
@@ -10,7 +10,22 @@
     padding: 1rem;
 }
 
+.project-card-entry > img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .project-card-entry{
-    height: 400px;
+    height: 20rem;
     padding: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .project-card-container{
+        margin-top: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
 }
