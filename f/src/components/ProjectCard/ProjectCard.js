@@ -4,11 +4,9 @@ import './ProjectCard.css'
 function ProjectCard ({props}) {
     return(
         <div className="project-card-container">
-            <div className="project-card-title">
-                <h1>{props.title}</h1>
-            </div>
+            <img src={props.src} alt=''></img>
             <div className="project-card-entry">
-                <img src={props.src} alt=''></img>
+                <h1>{props.title}</h1>
                 <p>
                     {props.entry}
                 </p>
