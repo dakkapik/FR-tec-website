@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     object-fit: contain;
+    padding-bottom: 1rem;
 }
 
 .project-display-background{
