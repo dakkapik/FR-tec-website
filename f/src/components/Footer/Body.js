@@ -11,11 +11,12 @@ function Footer() {
                     Contact Me
                 </p>
                 <div className='input-areas'>
-                    <form className='input-form'>
+                    <form className='input-form' action='http://localhost:8080/message' method='POST'>
                         <div>
                             <input type="email" name="email" placeholder='email' className='footer-input'/>
                             <input type="name" name="name" placeholder='name' className='footer-input'/>
-                            <Button buttonStyle='button--outline'>Send</Button>
+                            {/* <Button buttonStyle='button--outline'>Send</Button>  SOMETHING TO USE BUTTON AS POST*/}
+                            <input type="submit" value="Submit" />
                         </div>
                         <div>
                             <textarea type="text" name="message" placeholder='message' className='footer-message-input' rows="4"/>
@@ -47,7 +48,7 @@ function Footer() {
                         <h2>Work References</h2>
                         <a href="https://github.com/dakkapik">GitHub</a>
                         {/* <a href="">LinkedIn</a> */}
-                        <Link>Resume</Link>
+                        {/* <Link>Resume</Link> SOME WAY TO ADD RESUME HERE */}
                         {/* <Link>How it works</Link> */}
                     </div>
                 </div>
