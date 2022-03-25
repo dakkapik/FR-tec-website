@@ -40,16 +40,11 @@ app.post("/", (req, res) => {
   res.sendStatus(200)
 })
 
-app.post("/many", (req,res) => {
-  if(!fs.existsSync(POST_DIR)) fs.mkdirSync(POST_DIR);
-  const post = fs.readdirSync(POST_DIR)
-  req.body.forEach((post, index) => {
-    fs.writeFileSync(POST_DIR + "/" + req.body.title + ".json", JSON.stringify(req.body, null, 2))
-});
-
-
-
-})
+// app.post("/many", (req,res) => {
+//   if(!fs.existsSync(POST_DIR)) fs.mkdirSync(POST_DIR);
+//   const post = fs.readdirSync(POST_DIR)
+//   req.body.forEach((post, index) => fs.writeFileSync(POST_DIR + "/" + req.body.title + ".json", JSON.stringify(req.body, null, 2)));
+// })
 
 app.listen(port, () => console.log("listening: ", port));
 
