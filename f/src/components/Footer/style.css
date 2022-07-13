@@ -17,10 +17,11 @@
     padding: 24px;
     color: #fff;
   }
-  
+
   .input-form > div {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
   }
 
   .footer-subscription > p {
@@ -49,6 +50,21 @@
     margin-bottom: 16px;
     border: 1px solid #fff;
   }
+  .footer-form-button {
+    padding: 8px 20px;
+    padding-right: 40px;
+    border-radius: 2px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border: 1px solid #fff;
+  }
+  .footer-form-button:hover {
+    background-color: #242424;
+    color: #fff;
+  }
 
   .footer-message-input {
     width: 100%;
@@ -65,6 +81,7 @@
   .input-form {
     display: flex;
     flex-direction: column;
+    grid-row: 1;
   }
   
   .footer-links {

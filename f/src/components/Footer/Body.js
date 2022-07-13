@@ -1,9 +1,16 @@
-import React from 'react'
-import { Button } from '../Button/Body'
+import React, { useState } from 'react'
 import './style.css'
-import { Link } from 'react-router-dom'
 
 function Footer() {
+    const [userName, setUserName] = useState("")
+
+    const handleSubmit = (event) =>  {
+        alert("thank you for your message " + userName +", I will reply as soon as possible");
+        event.preventDefault();
+    }
+
+    const handleChange = (event) => setUserName(event.target.value)
+
     return (
         <div className='footer-container'>
             <section className="footer-subscription">
@@ -11,15 +18,17 @@ function Footer() {
                     Contact Me
                 </p>
                 <div className='input-areas'>
-                    <form className='input-form' action='http://localhost:8080/message' method='POST'>
+                    <form className='input-form' action='http://localhost:8080/message' method='POST' onSubmit={handleSubmit}>
                         <div>
                             <input type="email" name="email" placeholder='email' className='footer-input'/>
-                            <input type="name" name="name" placeholder='name' className='footer-input'/>
-                            {/* <Button buttonStyle='button--outline'>Send</Button>  SOMETHING TO USE BUTTON AS POST*/}
-                            <input type="submit" value="Submit" />
+                            <input type="name" name="name" placeholder='name' className='footer-input' onChange={handleChange}/>
+                            {/* <Button buttonStyle='button--outline'>Send</Button> */}
+                            <input type="submit" value="Submit" className='footer-form-button'/>
                         </div>
                         <div>
-                            <textarea type="text" name="message" placeholder='message' className='footer-message-input' rows="4"/>
+                            <textarea 
+                            type="text" name="message" placeholder='message'
+                            className='footer-message-input' rows="4" />
                         </div>
                     </form>
                 </div>
@@ -48,7 +57,7 @@ function Footer() {
                         <h2>Work References</h2>
                         <a href="https://github.com/dakkapik">GitHub</a>
                         {/* <a href="">LinkedIn</a> */}
-                        {/* <Link>Resume</Link> SOME WAY TO ADD RESUME HERE */}
+                        {/* <a>Resume</a> SOME WAY TO ADD RESUME HERE */}
                         {/* <Link>How it works</Link> */}
                     </div>
                 </div>
