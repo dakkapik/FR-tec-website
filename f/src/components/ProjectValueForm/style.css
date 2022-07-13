@@ -14,11 +14,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
-  .input-form > div {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* flex-grow: 1; */
-  }
+  
 
   .project-input-areas {
     color: #fff;
@@ -36,3 +32,11 @@
   }
   
  
+@media screen and (max-width: 768px) {
+  .input-form > div {
+    font-size: smaller;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-grow: 1; */
+  }
+}

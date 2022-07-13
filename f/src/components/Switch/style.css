@@ -1,11 +1,12 @@
 
 
-.container > div {
+.switch-container > div {
     padding: 8px 20px;
     overflow-wrap: break-word;
-    width: 10rem;
+    overflow: hidden;
+    width: 11rem;
     inline-size: 10rem;
-    padding-right: 40px;
+    padding-right: 10px;
     border-radius: 2px;
     outline: none;
     border: none;
@@ -22,3 +23,12 @@
     background-color: red;
     color: black;
 }
+
+@media screen and (max-width: 768px) {
+    .input-form > div {
+      font-size: 14px;
+      /* display: flex; */
+      /* flex-direction: row; */
+      /* flex-grow: 1; */
+    }
+  }

@@ -28,7 +28,7 @@ export default () => {
         ["demand", "greater than supply", "less than supply"],
         ['MARKET GROWTH'],
         ["rate", "20% or greater", "less than 20%"],
-        ["PRICE/FREQUENCY/VALUE"],
+        ["PRICE/ FREQUENCY/ VALUE"],
         ["price", "gross margin > 40%", "gross margin greater than 40%"],
         ["frequency", "often and repeated", "one time"],
         ["value", "fully reflected in price", "penetration pricing"],
