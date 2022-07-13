@@ -6,6 +6,8 @@ import Home from './pages/Home';
 // import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
+import ProjectValue from './pages/ProjectValue';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         {/* <Route path='/about' exact component={ AboutMe }/> */}
         <Route path='/contact' exact component={ Contact }/>
         <Route path='/projects' exact component={ Projects }/>
+        <Route path='/project-value' exact component={ ProjectValue }/>
       </Switch>
     </Router>
     </>
