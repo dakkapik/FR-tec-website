@@ -41,11 +41,11 @@ function NavBar() {
                                 Home
                             </Link>
                         </li>
-                        {/* <li className='nav-item'>
-                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                                Services
+                        <li className='nav-item'>
+                            <Link to='/project-value' className='nav-links' onClick={closeMobileMenu}>
+                                Project value form
                             </Link>
-                        </li> */}
+                        </li>
                         {/* <li className='nav-item'>
                             <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
                                 Projects

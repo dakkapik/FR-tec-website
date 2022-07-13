@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer/Body'
 import ProjectValueForm from '../components/ProjectValueForm/ProjectValueForm'
 
-export default () => {
+const ProjectValue = () => {
   return (
     <>
         <ProjectValueForm/>
@@ -10,3 +10,5 @@ export default () => {
     </>
   )
 }
+
+export default ProjectValue
