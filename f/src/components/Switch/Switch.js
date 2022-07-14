@@ -8,7 +8,7 @@ export default (props) => {
     const handleNeg = () => setValue(2)
     if(props.pos === undefined){
         return (
-            <div className='switch-container'>
+            <div className='switch-title-container'>
                 <div>{props.title}</div>
             </div>
         )
