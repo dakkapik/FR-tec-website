@@ -44,7 +44,7 @@ export default () => {
         ['MARKET GROWTH'],
         ["10. rate", "20% or greater", "less than 20%"],
         ["PRICE/ FREQUENCY/ VALUE"],
-        ["11. price", "gross margin > 40%", "gross margin greater than 40%"],
+        ["11. price", "gross margin greater 40%", "gross margin lesser than 40%"],
         ["12. frequency", "often and repeated", "one time"],
         ["13. value", "fully reflected in price", "penetration pricing"],
         ["14. operating expenses", "low and variable", "large and fixed"],
