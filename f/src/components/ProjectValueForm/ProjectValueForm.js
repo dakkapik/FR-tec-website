@@ -1,17 +1,32 @@
-import React, { useState } from 'react'
+import React, { createRef, useState } from 'react'
+import { useScreenshot, createFileName } from 'use-react-screenshot'
 import Switch from '../Switch/Switch'
 import './style.css'
+import { UtilButton } from '../Button/Body';
 
 export default () => {
+    const ref = createRef(null)
+
+    const [image, takeScreenshot] = useScreenshot({
+        type: "image/jpeg",
+        quality: 1.0
+    })
+
     const [userName, setUserName] = useState("")
+
+    const download = (image, { name = "img", extension = "jpg" } = {}) => {
+        const a = document.createElement("a");
+        a.href = image;
+        a.download = createFileName(extension, name);
+        a.click();
+    }
+    
+    const downloadScreenshot = () => takeScreenshot(ref.current).then(download);
 
     const handleSubmit = (event) =>  {
         alert("thank you for your message " + userName +", I will reply as soon as possible");
         event.preventDefault();
     }
-
-    const handleChange = (event) => setUserName(event.target.value)
-
 
     const fields = [
         ["CUSTOMER"],
@@ -52,11 +67,13 @@ export default () => {
         ['GOVERNMENT'],
         ["regulations", "low", "high"],
         ["taxes", "low", "high"],
-        ['GLOBAL ENVIRONMENT','',''],
+        ['GLOBAL ENVIRONMENT'],
         ["customers", "interested and accessible", "not interested or accessible"],
         ["competitors", "nonexistent or weak", "existing and strong"],
         ["vendors", "eager", "unavaliable"]
     ]
+
+
 
     const titles = [
         {title: "customer", fields: 3, answer:[]}, 
@@ -79,11 +96,12 @@ export default () => {
             <p className='project-value-heading'>
                 Project Value Checklist
             </p>
-            <div className='project-input-areas'>
+            <div className='project-input-areas' ref={ref}>
                 <form className='input-form' action='http://localhost:8080/message' method='POST' onSubmit={handleSubmit}>
                     {listItems}
                 </form>
             </div>
+            <UtilButton buttonStyle='btn--outline' onClick={downloadScreenshot}>Download</UtilButton>
         </div>
     )
 }
