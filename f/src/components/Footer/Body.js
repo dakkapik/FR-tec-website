@@ -56,7 +56,7 @@ function Footer() {
                     <div className='footer-link-items'>
                         <h2>Work References</h2>
                         <a href="https://github.com/dakkapik">GitHub</a>
-                        {/* <a href="">LinkedIn</a> */}
+                        <a href="https://www.linkedin.com/in/felipe-rodas-613395173">LinkedIn</a>
                         {/* <a>Resume</a> SOME WAY TO ADD RESUME HERE */}
                         {/* <Link>How it works</Link> */}
                     </div>
