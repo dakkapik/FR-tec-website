@@ -37,7 +37,7 @@ export default () => {
         ["4. macro market", "multiple and converging", "few and disparate"],
         ["5. target market", "multiple and converging", "few and disparate"],
         ["6. window of opportunity", "opening", "closing"],
-        ["7. market structure", "emerging/fragmented", "mature/decline"],
+        ["7. market structure", "emerging/ fragmented", "mature/decline"],
         ['MARKET SIZE'],
         ["8. how many", "large core customer group", "small unclear customer groups"],
         ["9. demand", "greater than supply", "less than supply"],

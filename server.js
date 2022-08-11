@@ -17,6 +17,7 @@ app.use(express.static(path.join(__dirname, "f", "build")));
 app.use(favicon(path.join('f','build','logo-fr-tec.png')));
 
 app.use("/entries", entries);
+
 app.get('/*', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
 
