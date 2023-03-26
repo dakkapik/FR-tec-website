@@ -8,7 +8,7 @@ const moCap = require("./routes/moCap");
 const sheets = require("./routes/sheets");
 const app = express();
 
-// const db = require("./db");
+const db = require("./db")()
 
 const PORT = process.env.PORT || 8080;
 
