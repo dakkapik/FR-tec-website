@@ -1,22 +1,18 @@
-let mongoose = require('mongoose');
+const { Client } = require("pg");
 
-const server = `mongodb+srv://fr-tec:${process.env.PASSWORD}@cluster0.dab6a.mongodb.net/?retryWrites=true&w=majority`; // REPLACE WITH YOUR DB SERVER
-const database = 'frtec';      // REPLACE WITH YOUR DB NAME
+const client = new Client(process.env.DATABASE_URL);
 
-class Database {
-    constructor() {
-        this._connect(server)
-    }
-  
-    _connect() {
-     mongoose.connect(server)
-       .then(() => {
-         console.log('Database connection successful')
-       })
-       .catch(err => {
-         console.error('Database connection error: ', err)
-       })
-    }
+module.exports = async () => {
+  await client.connect();
+  // try {
+  //   const results = await client.query("SELECT NOW()");
+  //   console.log(results);
+  // } catch (err) {
+  //   console.error("error executing query:", err);
+  // } finally {
+  //   client.end();
+  // }
+  return client
 }
 
-module.exports = new Database()
+// export DATABASE_URL="postgresql://DakkaPik86:wSm_56_iCHlFC9pthGAz_A@speedy-cuscus-9754.7tt.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full"

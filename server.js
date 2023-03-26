@@ -7,7 +7,7 @@ const entries = require("./routes/entries");
 const sheets = require("./routes/sheets");
 const app = express();
 
-const db = require("./db");
+const db = require("./db")()
 
 const PORT = process.env.PORT || 8080;
 
