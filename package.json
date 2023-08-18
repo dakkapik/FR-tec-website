@@ -9,7 +9,7 @@
     "heroku-postbuild": "cd f && npm install && npm run build"
   },
   "engines": {
-    "node": "16.14.0"
+    "node": "18.16.0"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/dakkapik/FR-tec-website#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.17.2",
     "express-favicon": "^2.0.1",
     "joi": "^17.6.0",

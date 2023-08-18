@@ -8,7 +8,7 @@ class Database {
         this._connect(server)
     }
   
-    _connect() {
+    _connect() {npm 
      mongoose.connect(server)
        .then(() => {
          console.log('Database connection successful')

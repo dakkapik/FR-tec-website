@@ -1,3 +1,4 @@
+if (!process.env.PASSWORD) require('dotenv').config()
 if (!process.env.PASSWORD) console.log("ALERT: NO PASSWORD");
 const express = require('express');
 const cors = require("cors");
