@@ -1,4 +1,5 @@
 let mongoose = require('mongoose');
+mongoose.set('strictQuery', true);
 
 const server = `mongodb+srv://fr-tec:${process.env.PASSWORD}@cluster0.dab6a.mongodb.net/?retryWrites=true&w=majority`; // REPLACE WITH YOUR DB SERVER
 const database = 'frtec';      // REPLACE WITH YOUR DB NAME
@@ -8,7 +9,7 @@ class Database {
         this._connect(server)
     }
   
-    _connect() {npm 
+    _connect() {
      mongoose.connect(server)
        .then(() => {
          console.log('Database connection successful')
