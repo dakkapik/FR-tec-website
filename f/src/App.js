@@ -1,14 +1,14 @@
 import './App.css';
 import React from 'react';
-import NavBar from "./components/NavBar/Body"
+import NavBar from "./components/primary/NavBar/Body"
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './pages/Home';
 // import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import ProjectValue from './pages/ProjectValue';
-import Resume from './pages/Resume'
-import ProgramsList from './components/ProgramsList/ProgramsList';
+
+import Programs from './pages/Programs';
 
 
 function App() {
@@ -21,9 +21,9 @@ function App() {
         <Route path='/' exact component={ Home }/>
         {/* <Route path='/about' exact component={ AboutMe }/> */}
         <Route path='/contact' exact component={ Contact }/>
-        <Route path='/resume' exact component={Resume}/>
+        <Route path='/doc/resume-pdf'/>
         <Route path='/projects' exact component={ Projects }/>
-        <Route path='/programs' exact component={ ProgramsList }/>
+        <Route path='/programs' exact component={ Programs }/>
         <Route path='/project-value' exact component={ ProjectValue }/>
       </Switch>
     </Router>

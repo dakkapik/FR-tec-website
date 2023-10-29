@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
-import { Button } from '../Button/Body';
+import { Button } from '../../secondary/Button/Body'
 
 function NavBar() {
 
@@ -47,7 +47,7 @@ function NavBar() {
                             </Link>
                         </li> */}
                          <li className='nav-item'>
-                            <Link to='/resume' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/doc/resume-pdf' className='nav-links' onClick={closeMobileMenu}>
                                 Resume
                             </Link>
                         </li> 

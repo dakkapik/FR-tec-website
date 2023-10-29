@@ -1,6 +1,6 @@
 import React from 'react'
-import ProjectsDisplays from '../components/ProjectsDisplay/ProjectsDisplay'
-import Footer from '../components/Footer/Body'
+import ProjectsDisplays from '../components/secondary/ProjectValueForm/ProjectValueForm'
+import Footer from '../components/primary/Footer/Body'
 
 const Projects = () => {
     return (

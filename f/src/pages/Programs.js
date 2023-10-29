@@ -1,7 +1,7 @@
 import React from 'react'
 import './ProgramsList.css'
 import { Link } from 'react-router-dom';
-function ProgramsList ({props}) {
+function Programs ({props}) {
     // const [ projects, setProjects ] = useState([])
 
   // useEffect(() => {
@@ -28,4 +28,4 @@ function ProgramsList ({props}) {
   )
 }
 
-export default ProgramsList
+export default Programs

@@ -1,6 +1,6 @@
 import React, { createRef, useState } from 'react'
 import { useScreenshot, createFileName } from 'use-react-screenshot'
-import Switch from '../secondary/Switch/Switch'
+import Switch from '../Switch/Switch'
 import './style.css'
 import { UtilButton } from '../Button/Body';
 
