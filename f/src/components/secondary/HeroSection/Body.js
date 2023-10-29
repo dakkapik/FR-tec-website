@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../Button/Body'
+import { Button } from '../../util/Button/Body'
 import "./style.css"
 
 function HeroSection() {

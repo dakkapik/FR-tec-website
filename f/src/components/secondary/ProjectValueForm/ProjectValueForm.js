@@ -1,8 +1,8 @@
-import React, { createRef, useState } from 'react'
+import React, { createRef } from 'react'
 import { useScreenshot, createFileName } from 'use-react-screenshot'
-import Switch from '../Switch/Switch'
+import Switch from '../../util/Switch/Switch'
 import './style.css'
-import { UtilButton } from '../Button/Body';
+import { UtilButton } from '../../util/Button/Body';
 
 export default () => {
     const ref = createRef(null)
@@ -12,7 +12,6 @@ export default () => {
         quality: 1.0
     })
 
-    // const [userName, setUserName] = useState("")
 
     const download = (image, { name = "img", extension = "jpg" } = {}) => {
         const a = document.createElement("a");

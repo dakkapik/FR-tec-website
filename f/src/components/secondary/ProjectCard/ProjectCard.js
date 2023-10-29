@@ -1,10 +1,12 @@
 import React from 'react'
 import './ProjectCard.css'
 
-function ProjectCard ({props}) {
+function ProjectCard (props) {
+    console.log(props.src)
     return(
         <div className="project-card-container">
             <img src={props.src} alt=''></img>
+            {/* <img src= '/images/genetic.png' alt=''></img> */}
             <div className="project-card-entry">
                 <h1>{props.title}</h1>
                 <p>

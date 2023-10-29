@@ -2,7 +2,7 @@
     padding: 1rem;
     display: flex;
     width:92%;
-    background-color: rgba(239, 239, 255, 0.973);
+    background-color: rgba(44, 44, 44, 0.599);
     margin-top: 2rem;
 }
 .project-card-container > img{
@@ -13,7 +13,7 @@
 
 
 .project-card-title{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.314);
     margin-bottom: 1rem;
     padding: 1rem;
 }

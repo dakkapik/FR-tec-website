@@ -6,9 +6,10 @@
     align-items: center;
     object-fit: contain;
     padding-bottom: 1rem;
+    color:white;
 }
 
-.project-display-background{
+/* .project-display-background{
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -16,4 +17,4 @@
     top:0;
     left:0;
     z-index: -1;
-}
+} */

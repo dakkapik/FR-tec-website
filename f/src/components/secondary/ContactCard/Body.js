@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import {Link} from 'react-router-dom'
+import { Button } from '../../util/Button/Body'
 
 function ContactCard() {
     return (
@@ -11,10 +12,20 @@ function ContactCard() {
                 <h2>Miami, Florida, USA</h2>
                 <h2>ae86rodas@outlook.com</h2>
                 <h2>(786) 329-2625</h2>
-                <Link to="res"> Resume </Link>
+                <Button 
+                onClick={goToResume}
+                buttonSize={'btn-large'}
+                buttonStyle={'btn--outline'}
+                >
+                    Resume
+                </Button>
             </div>
         </div>
     )
+}
+
+function goToResume() {
+    window.location.replace("/doc/resume-pdf")
 }
 
 export default ContactCard

@@ -1,12 +1,12 @@
 .profile-container{
     padding: 0.5rem;
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
 }
 
 .profile-section-1 {
     margin-bottom: 0.5rem;
-    background-color: #fff;
+    background-color: #ffffff31;
     display: flex;
 }
 
@@ -22,7 +22,7 @@
 
 .profile-section-2 {
     margin-bottom: 0.5rem;
-    background-color: #fff;
+    background-color: #ffffff38;
     display: flex;
     flex-direction: row-reverse;
 }

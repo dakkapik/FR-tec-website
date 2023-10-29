@@ -1,5 +1,5 @@
 import React from 'react'
-import CardItem from '../CardItem/Body'
+import CardItem from '../../secondary/CardItem/Body'
 import './style.css'
 
 function Cards() {
