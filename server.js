@@ -6,6 +6,7 @@ const path = require("path");
 const favicon = require('express-favicon');
 const entries = require("./routes/entries");
 const sheets = require("./routes/sheets");
+const docs = require("./routes/doc")
 const app = express();
 
 const db = require("./db");
@@ -20,6 +21,8 @@ app.use(favicon(path.join('f','build','logo-fr-tec.png')));
 
 app.use("/entries", entries);
 app.use("/sheets", sheets);
+app.use("/doc", docs);
+
 
 app.get('/*', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
