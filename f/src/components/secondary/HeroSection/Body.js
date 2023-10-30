@@ -9,12 +9,13 @@ function HeroSection() {
             <video className="cover-video" src='/videos/video-2.mp4' autoPlay loop muted/>
             {/* <video className="cover-video" src='/videos/back-to-vraks.mp4' autoPlay loop muted/> */}
             <h1> ADVENTURE AWAITS </h1>
-            <p> This site is a work in progress </p>
+            <p> with a friendly robot </p>
             <div className="hero-btns">
                 <Button 
                 className='btns' 
                 buttonStyle='btn--outline'
                 buttonSize='btn-large'
+                sendTo="/Blog"
                 >
                     WANT TO LEARN MORE?
                 </Button>
@@ -22,6 +23,7 @@ function HeroSection() {
                 className='btns' 
                 buttonStyle='btn--primary'
                 buttonSize='btn-large'
+                sendTo="/Contact"
                 >
                     Contact me!
                 </Button>

@@ -2,7 +2,7 @@ import React from 'react'
 import './ProjectCard.css'
 
 function ProjectCard (props) {
-    console.log(props.src)
+    
     return(
         <div className="project-card-container">
             <img src={props.src} alt=''></img>
