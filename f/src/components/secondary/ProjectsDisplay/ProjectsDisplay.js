@@ -6,8 +6,8 @@ function ProjectsDisplay() {
   return (
       <div className='project-display-container'>
         <h1>Projects</h1>
-        <ProjectCard src="/images/genetic.png" title="genetic algo" entry="I did some shit"/>
-        <ProjectCard src="/images/genetic.png" title="genetic algo" entry="I did some shit"/>
+        <ProjectCard src="/images/genetic.png" title="genetic algo" entry="entries here coming soon"/>
+        <ProjectCard src="/images/genetic.png" title="genetic algo" entry="entries here coming soon"/>
       </div>
 
   )
