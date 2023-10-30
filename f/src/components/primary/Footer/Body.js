@@ -7,9 +7,41 @@ function Footer() {
     const handleSubmit = (event) =>  {
         alert("thank you for your message " + userName +", I will reply as soon as possible");
         event.preventDefault();
+        const f = new FormData(event.target)
+        const data = {
+            email: f.get("email"),
+            name: f.get("name"),
+            message: f.get("message")
+        }
+        console.log(window.localStorage.hostname)
+        postRes("API/message", data)
     }
 
-    const handleChange = (event) => setUserName(event.target.value)
+    function postRes(url, json) {
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json;charset=UTF-8'
+          },
+          body: JSON.stringify(json)
+        })
+        .then(response => {
+          if (response.ok) {
+            // Handle success
+          } else {
+            // Handle error
+          }
+        })
+        .catch(error => {
+          // Handle error
+        });
+      }
+
+
+    const handleChange = (event) =>{
+        setUserName(event.target.value)
+
+    } 
 
     return (
         <div className='footer-container'>
@@ -18,7 +50,7 @@ function Footer() {
                     Contact Me
                 </p>
                 <div className='input-areas'>
-                    <form className='input-form' action='http://localhost:8080/message' method='POST' onSubmit={handleSubmit}>
+                    <form className='input-form' onSubmit={handleSubmit}>
                         <div>
                             <input type="email" name="email" placeholder='email' className='footer-input'/>
                             <input type="name" name="name" placeholder='name' className='footer-input' onChange={handleChange}/>
@@ -57,7 +89,7 @@ function Footer() {
                         <h2>Work References</h2>
                         <a href="https://github.com/dakkapik">GitHub</a>
                         <a href="https://www.linkedin.com/in/felipe-rodas-613395173">LinkedIn</a>
-                        {/* <a>Resume</a> SOME WAY TO ADD RESUME HERE */}
+                        {/* <a></a> SOME WAY TO ADD  HERE */}
                         {/* <Link>How it works</Link> */}
                     </div>
                 </div>

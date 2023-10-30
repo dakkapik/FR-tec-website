@@ -4,7 +4,7 @@ import Switch from '../../util/Switch/Switch'
 import './style.css'
 import { UtilButton } from '../../util/Button/Body';
 
-export default () => {
+const ProjectValueForm = () => {
     const ref = createRef(null)
 
     const [image, takeScreenshot] = useScreenshot({
@@ -106,3 +106,5 @@ export default () => {
         </div>
     )
 }
+
+export default ProjectValueForm

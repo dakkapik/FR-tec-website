@@ -13,9 +13,9 @@ const router = new Router();
 router.get("/game-class", (req, res)=> {
     res.sendFile(path.join(__dirname, 'gameClass.txt'))
 })
-router.get('/resume-pdf', (req, res) => {
-    res.sendFile(path.join(__dirname, "resume.pdf"))
-})
+// router.get('/resume-pdf', (req, res) => {
+//     res.sendFile(path.join(__dirname, "resume.pdf"))
+// })
 // routes.post('/', SessionController.store);
 // routes.put('/', SessionController.store);
 // routes.delete('/', SessionController.store);

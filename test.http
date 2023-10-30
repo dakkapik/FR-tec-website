@@ -1,8 +1,7 @@
-POST https://localhost:8080/entry HTTP/1.1
-
+POST https://192.168.0.237:8080/API/message HTTP/1.1
 content-type: application/json
-
 {
     "name": "sample",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+    "email":"thing@dlksafj.com",
+    "message":"messagehaskfasj alsjfask"
 }

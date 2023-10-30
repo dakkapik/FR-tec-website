@@ -13,19 +13,24 @@ function validateMessage(input){
 const messageSchema = new mongoose.Schema({
     email: {
         type: String,
-        require: true,
+        required: true,
         maxlength: 255,
         minlength: 5
     },
     name: {
         type: String,
-        require: true,
+        required: true,
         maxlength: 255,
         minlength: 2
     },
     message: {
         type: String,
         required: false
+    },
+    date: {
+        type: Number,
+        default: Date.now(),
+        required: true
     }
 })
 

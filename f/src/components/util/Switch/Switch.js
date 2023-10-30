@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './style.css'
 
-export default (props) => {
+const Switch = (props) => {
     const [value, setValue] = useState(0)
 
     const handlePos = () => setValue(1)
@@ -36,9 +36,16 @@ export default (props) => {
                     <div onClick={handleNeg} className='neg'>{props.neg}</div>
                 </div>
             );
+            default: return (
+                <div className='switch-container'>
+                    <div>{props.title}</div>
+                    <div onClick={handlePos}>{props.pos}</div>
+                    <div onClick={handleNeg}>{props.neg}</div>
+                </div>
+            );
         }
     }
     
 }
 
-
+export default Switch

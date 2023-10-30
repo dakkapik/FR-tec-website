@@ -1,6 +1,5 @@
 import React from 'react'
 import './style.css'
-import {Link} from 'react-router-dom'
 import { Button } from '../../util/Button/Body'
 
 function ContactCard() {
@@ -25,7 +24,7 @@ function ContactCard() {
 }
 
 function goToResume() {
-    window.location.replace("/doc/resume-pdf")
+    window.location.replace("/resume2.pdf")
 }
 
 export default ContactCard
