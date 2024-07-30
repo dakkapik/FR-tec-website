@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ProjectsDisplay.css"
-import ProjectCard from '../ProjectCard/ProjectCard'
+import ProjectCard from "../../secondary/ProjectCard/ProjectCard"
 
 function ProjectsDisplay() {
   return (
