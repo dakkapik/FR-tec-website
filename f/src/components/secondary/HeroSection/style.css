@@ -43,9 +43,11 @@
   
   .hero-btns {
     margin-top: 32px;
+    overflow-x: visible;
   }
   
   .hero-btns .btn {
+    overflow-x: visible;
     margin: 6px;
   }
   
@@ -61,21 +63,25 @@
   }
   
   @media screen and (max-width: 768px) {
+
     .hero-container > h1 {
-      font-size: 50px;
+      overflow-x: hidden;
+      font-size: 30px;
       margin-top: -100px;
     }
   
     .hero-container > p {
-      font-size: 30px;
+      font-size: 20px;
     }
   
     .btn-mobile {
       display: block;
       text-decoration: none;
+      overflow-x: visible;
     }
   
     .btn {
       width: 100%;
     }
+
   }
