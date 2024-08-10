@@ -9,13 +9,15 @@ import Profile from '../components/primary/Profile/Profile'
 
 function Home () {
     return (
-        <>
+        <div 
+            style={{overflowX:"hidden"}}
+        >
          <HeroSection/>
          <Profile/>
          <ProjectDisplays/>
          {/* <Cards/> */}
          <Footer/>
-        </>
+        </div>
     )
 }
 

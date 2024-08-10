@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './Profile.css'
-import ProfileSectionA from '../../secondary/ProfileSectionA/ProfileSectionA'
-
+import ProfileSectionPic from '../../secondary/ProfileSectionPic/ProfileSectionPic'
+import ProfileSectionVid from '../../secondary/ProfileSectionVid/ProfileSectionVid'
 
 function Profile() {
     const [text2, setText2] = useState([
@@ -13,7 +13,26 @@ function Profile() {
 
     return (
         <div className="profile-container">
-            <ProfileSectionA/>
+            <ProfileSectionPic 
+            title="Software engineer" 
+            pic="images/prof-4.png"
+            alt="profile 4"
+            sectionType={0}
+            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            />
+            <ProfileSectionPic 
+            title="Software engineer" 
+            pic="images/prof-4.png"
+            alt="profile 4"
+            sectionType={1}
+            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            />
+            <ProfileSectionVid
+            vid="/videos/defiance-mobile2.mp4"
+            sectionType={0}
+            title="Mobile Developer"
+            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            />
             <div className="profile-section-2">
                 <img src="images/prof-1.jpg" alt="profile 2"/>
                 <div className="profile-text-container">

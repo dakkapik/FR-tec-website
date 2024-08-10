@@ -1,0 +1,56 @@
+.profile-section {
+    margin-bottom: 0.5rem;
+    background-color: #000000b5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+
+.profile-section > img {
+    flex:3;
+    object-fit: contain;
+}
+
+.profile-section > video {
+    height: 500px;
+    object-fit: contain;
+}
+
+.profile-section > p {
+    padding: 1rem 2rem;
+    display:flex;
+    flex: 4;
+    align-items: center;
+    color: #fff;
+}
+
+.profile-section > h1{
+    overflow: visible;
+    padding: 1rem 2rem;
+    flex: 1;
+}
+
+@media screen and (max-width: 768px){
+    .profile-section{
+        flex-direction: column;
+    
+    }
+    .profile-section > h1{
+        order:0;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .profile-section > img {
+        order: 1;
+        Width: 500px;
+        height: 85%;
+        object-fit: contain;
+    }
+
+    .profile-section > p {
+        order: 2;
+        padding: 2vw 4vh ;
+    }
+}
