@@ -1,7 +1,13 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import "./ProfileSectionPic.css"
 
 function ProfileSectionPic({title, pic, alt, text, sectionType}) {
+
+
+    const [formatedText, setFormatedText] = useState(text.split("\n"))
+
+    console.log(formatedText)
+
     if(sectionType ===0){
         return (
             <div className="profile-section">

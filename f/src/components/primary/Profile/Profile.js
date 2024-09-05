@@ -11,7 +11,7 @@ function Profile() {
             pic="images/prof-4.png"
             alt="profile 4"
             sectionType={0}
-            text="Proven experience in API development/implementation \n debugging and testing suites using best clean code practices\nthrough documentation."
+            text="Proven experience in API development/implementation \ndebugging and testing suites using best clean code practices\nthrough documentation."
             />
             <ProfileSectionVid
             vid="/videos/defiance-mobile2.mp4"

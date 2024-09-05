@@ -15,6 +15,7 @@
 
 .profile-section > video {
     height: 500px;
+    max-height: 250px;
     object-fit: contain;
 }
 
@@ -47,6 +48,10 @@
         Width: 500px;
         height: 85%;
         object-fit: contain;
+    }
+
+    .profile-section > video {
+        max-height: 400px;
     }
 
     .profile-section > p {
